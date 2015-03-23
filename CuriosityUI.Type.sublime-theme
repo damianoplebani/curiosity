@@ -1,0 +1,72 @@
+[
+
+        // TABS
+
+        // Tab labels (…and tabs)
+    {
+        "class": "tab_label",
+        "font.face": "PragmataPro",
+        "font.size": 12
+    },
+
+        // SIDEBAR
+    {
+        "class": "sidebar_label",
+        "font.face": "PragmataPro",
+        "font.size": 12
+    },
+        // Sidebar heading
+    {
+        "class": "sidebar_heading",
+        "font.size": 11,
+        "font.face": "PragmataPro",
+        "font.bold": true,
+    },
+
+        // STANDARD TEXT BUTTONS
+
+        // Standard buttons (used for Find/Replace panel)
+    {
+        "class": "label_control",
+        "parents": [{"class": "button_control"}],
+        "font.size": 12,
+        "font.face": "PragmataPro",
+    },
+
+        // Button labels
+    {
+        "class": "label_control",
+        "parents": [{"class": "button_control"}],
+        "font.size": 13
+    },
+
+    // Text field labels
+    {
+        "class": "label_control",
+        "parents": [{"class": "panel_control"}],
+        "font.face": "PragmataPro",
+    },
+
+        // Tooltip Typeface
+    {
+        "class": "tool_tip_label_control",
+        "font.size": 12,
+        "font.face": "PragmataPro",
+    },
+
+        // Status bar label
+    {
+        "class": "label_control",
+        "parents": [{"class": "status_bar"}],
+    //  "font.bold": false,
+        "font.size": 12,
+        "font.face": "PragmataPro"
+    },
+
+        // Package Control
+    {
+        "class": "label_control",
+        "parents": [{"class": "mini_quick_panel_row"}],
+        "font.face": "PragmataPro", // but it doesn't work! :/
+    },
+]
