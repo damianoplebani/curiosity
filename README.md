@@ -4,8 +4,11 @@
 
 Warmth from Predawn. Attitude from Spacegray.
 
+
 ![Curiosity](screenshots/curiosity_theme.png)
-<small>Typeface used in code: [Pragmata Pro](http://www.fsd.it/fonts/pragmatapro.htm). UI Typeface: [Input Sans](http://input.fontbureau.com)</small>
+<sub>Typeface used in code: [Pragmata Pro](http://www.fsd.it/fonts/pragmatapro.htm). UI Typeface: [Input Sans](http://input.fontbureau.com)</sub>
+
+[View original screenshot](https://raw.githubusercontent.com/dmnplb/curiosity/master/screenshots/curiosity_theme.png)
 
 ***
 
@@ -19,7 +22,7 @@ Warmth from Predawn. Attitude from Spacegray.
 * Transparency and hover details
 * Support for Retina displays
 
-<small>[Are you curious about the differences from Spacegray and Predawn?](#differences)</small>
+<sub>[Are you curious about the differences from Spacegray and Predawn?](#differences)</sub>
 
 ***
 
@@ -33,7 +36,10 @@ Warmth from Predawn. Attitude from Spacegray.
 
 ### “Hacker” way: Git
 1. Go to your Sublime Text `Packages` folder using the menu item `Preferences → Browse Packages...`
-2. Clone the repository using this command: `git clone https://github.com/dmnplb/curiosity/ "Theme - Curiosity"`
+2. Clone the repository using this command:
+```shell
+git clone https://github.com/dmnplb/curiosity/ "Theme - Curiosity"
+```
 
 ### Masochist way: Manual 
 1. [Download the archive from Github](https://github.com/dmnplb/curiosity/archive/master.zip)
@@ -44,7 +50,7 @@ Warmth from Predawn. Attitude from Spacegray.
 ***
 
 ## How to Activate
-1. Open your “User Preferences” file using the menu item `Sublime Text → Preferences → Settings - User` (OS X → <kbd>Cmd</kbd>+<kbd>,</kbd>).
+1. Open your “User Preferences” file using the menu item `Sublime Text → Preferences → Settings - User`
 2. Add or replace your current theme settings with the code below, then save:
 
 ```json
@@ -68,9 +74,9 @@ From this point, any valid theme rules you place in this file will automatically
 
 #### Instructions
 1. Download the **[CuriosityUI.Type](https://github.com/dmnplb/curiosity/blob/master/CuriosityUI.Type.sublime-theme)** file (`Save Link As…`). Take it from the cloned repository, if you followed the “Hacker” way.
-2. Change its name to `Curiosity.sublime-theme`
-3. If you prefer a custom type, edit all the font references (eg: Source Code instead of [PragmataPro](http://www.fsd.it/fonts/pragmatapro.htm)) using Find&Replace` or <kbd>Cmd</kbd>+<kbd>D</kbd> (OSX) or <kbd>Ctrl</kbd>+<kbd>D</kbd> (Win/Linux) to select all the instances
-4. Move the file in the `Packages/User` folder
+2. Move the file in the `Packages/User` folder
+3. If you prefer a custom type, edit all the font references (eg: Source Code instead of [PragmataPro](http://www.fsd.it/fonts/pragmatapro.htm)) using `Find&Replace` or <kbd>Cmd</kbd>+<kbd>D</kbd> (OSX) or <kbd>Ctrl</kbd>+<kbd>D</kbd> (Win/Linux) to select all the instances
+4. Change its name to `Curiosity.sublime-theme`
 5. Restart Sublime Text. It's blazing fast, isn't it?
 6. You are free to add other custom theme rules
 
@@ -138,7 +144,8 @@ Change the font size and vertical spacing of the sidebar by adding one of these 
 ### <a name="markdown-guide"></a>Markdown
 
 ![CuriosityMarkdown](screenshots/curiosity_markdown.png)
-<small>Font in use: [Pragmata Pro](http://www.fsd.it/fonts/pragmatapro.htm), designed by [Fabrizio Schiavi](http://www.fsd.it)</small>
+
+<sub>Font in use: [Pragmata Pro](http://www.fsd.it/fonts/pragmatapro.htm), designed by [Fabrizio Schiavi](http://www.fsd.it)</sub>
 
 #### Instructions
 1. Close all open `*.md` files
