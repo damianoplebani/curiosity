@@ -32,7 +32,7 @@ Warmth from Predawn. Attitude from Spacegray.
 1. [Install Package Control](https://packagecontrol.io/installation)
 2. Open Command Palette using the menu item `Tools → Command Palette...` (OS X → <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> · Win/Linux → <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>)
 3. Type and select `Package Control: Install Package`
-4. Find `Theme - Curiosity` and hit <kbd>Enter</kbd> (waiting for approval)
+4. Find `Theme - Curiosity` and hit <kbd>Enter</kbd>
 
 ### “Hacker” way: Git
 1. Go to your Sublime Text `Packages` folder using the menu item `Preferences → Browse Packages...`
@@ -85,7 +85,7 @@ From this point, any valid theme rules you place in this file will automatically
 ##### [PragmataPro](http://www.fsd.it/fonts/pragmatapro.htm)
 > PragmataPro™ is a condensed monospaced font optimized for screen, designed to be the ideal font for coding and engineering.
 
-Designed by Italian type designer [Fabrizio Schiavi](http://www.fsd.it) over the last years, it has no interline spacings so it's perfect as UI typeface. It's quite expensive, but it's worth every penny if you consider the great aumont of the work. <small>Furthermore, don't forget to have a look at [these slick OpenType ligatures](http://www.fsd.it/fonts/pragmatapro/OpenType_features.png)</small>
+Designed by Italian type designer [Fabrizio Schiavi](http://www.fsd.it) over the last years, it has no interline spacings so it's perfect as UI typeface as well. It's quite expensive, but it's worth every penny if you consider the great aumont of the work. Furthermore, don't forget to have a look at [these slick OpenType ligatures](http://www.fsd.it/fonts/pragmatapro/OpenType_features.png)
 
 ##### [Input](http://input.fontbureau.com)
 > Input is a flexible system of fonts designed specifically for code by [David Jonathan Ross](http://www.fontbureau.com/people/DavidJonathanRoss/). It offers both monospaced and proportional fonts, all with a large range of widths, weights, and styles for richer code formatting.
@@ -145,7 +145,7 @@ Change the font size and vertical spacing of the sidebar by adding one of these 
 
 ![CuriosityMarkdown](screenshots/curiosity_markdown.png)
 
-<sub>Font in use: [Pragmata Pro](http://www.fsd.it/fonts/pragmatapro.htm), designed by [Fabrizio Schiavi](http://www.fsd.it)</sub>
+<sub>Typeface in use: [Pragmata Pro](http://www.fsd.it/fonts/pragmatapro.htm), designed by [Fabrizio Schiavi](http://www.fsd.it)</sub>
 
 #### Instructions
 1. Close all open `*.md` files
