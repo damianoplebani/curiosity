@@ -43,6 +43,13 @@
         "settings": ["curiosity_tabs_small"],
         "tab_height": 30
     },
+
+    {
+        "class": "tabset_control",
+        "settings": ["curiosity_tabs_medium"],
+        "tab_height": 45
+    },
+
     {
         "class": "tabset_control",
         "settings": ["curiosity_tabs_large"],
@@ -106,7 +113,7 @@
         "content_margin": [0, 0],
 
         // Tab close default settings
-        "layer0.texture": "Curiosity/assets/tab-close.png",
+        "layer0.texture": "Theme - Curiosity/assets/tab-close.png",
         "layer0.opacity": 0,
         "layer0.inner_margin": [0, 0],
     },
@@ -120,7 +127,7 @@
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control","attributes": ["hover"]}],
-        "layer0.texture": "Curiosity/assets/tab-close.png",
+        "layer0.texture": "Theme - Curiosity/assets/tab-close.png",
         "layer0.opacity": { "target": 0.45, "speed": 3, "interpolation": "smoothstep" },
     },
         // Don't insert these following properties before the previous code block
@@ -179,7 +186,7 @@
 
     {
         "class": "fold_button_control",
-        "layer0.texture": "Curiosity/assets/fold-closed.png",
+        "layer0.texture": "Theme - Curiosity/assets/fold-closed.png",
         "layer0.opacity": 1,
         "layer0.inner_margin": 0,
         "content_margin": [9, 7, 8, 6]
@@ -197,7 +204,7 @@
     {
         "class": "fold_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Curiosity/assets/fold-open.png",
+        "layer0.texture": "Theme - Curiosity/assets/fold-open.png",
         "layer0.opacity": 0.5
     },
 
@@ -305,7 +312,7 @@
     {
         "class": "puck_control",
         "settings": ["overlay_scroll_bars"],
-        "layer0.texture": "Curiosity/assets/overlay-puck-vertical.png",
+        "layer0.texture": "Theme - Curiosity/assets/overlay-puck-vertical.png",
         "layer0.inner_margin": [0, 5],
         "content_margin": [5, 20],
         "blur": false
@@ -317,7 +324,7 @@
         "class": "puck_control",
         "settings": ["overlay_scroll_bars"],
         "attributes": ["horizontal"],
-        "layer0.texture": "Curiosity/assets/overlay-puck-horizontal.png",
+        "layer0.texture": "Theme - Curiosity/assets/overlay-puck-horizontal.png",
         "layer0.inner_margin": [5, 0],
         "content_margin": [20, 5],
         "blur": false
@@ -450,28 +457,29 @@
     },
     {
         "class": "sidebar_tree",
-        "settings": ["curiosity_sidebar_tree_xsmall"],
-        "row_padding": [8, 0]
+        "settings": ["curiosity_sidebar_xsmall"],
+        "row_padding": [25, 2]
     },
     {
         "class": "sidebar_tree",
-        "settings": ["curiosity_sidebar_tree_small"],
-        "row_padding": [8, 2]
+        "settings": ["curiosity_sidebar_small"],
+        "row_padding": [25, 3]
     },
     {
         "class": "sidebar_tree",
-        "settings": ["curiosity_sidebar_tree_normal"],
-        "row_padding": [8, 4]
+        "settings": ["curiosity_sidebar_normal"],
+        "row_padding": [25, 4]
+    },
+
+    {
+        "class": "sidebar_tree",
+        "settings": ["curiosity_sidebar_large"],
+        "row_padding": [30, 6]
     },
     {
         "class": "sidebar_tree",
-        "settings": ["curiosity_sidebar_tree_large"],
-        "row_padding": [8, 6]
-    },
-    {
-        "class": "sidebar_tree",
-        "settings": ["curiosity_sidebar_tree_xlarge"],
-        "row_padding": [8, 8]
+        "settings": ["curiosity_sidebar_xlarge"],
+        "row_padding": [30, 8]
     },
 
         // Sidebar row selected
@@ -493,7 +501,8 @@
     {
         "class": "sidebar_label",
         "color": [140, 140, 140],
-        "font.bold": false
+        "font.bold": false,
+        "font.size": 12
     },
         // Sidebar folder entry
     {
@@ -519,10 +528,39 @@
         "attributes": ["transient"],
         "font.italic": true
     },
+
+    // Sidebar Font Size 11
+    {
+        "class": "sidebar_label",
+        "settings": ["curiosity_sidebar_font_small"],
+        "font.size": 11,
+    },
+
+    // Sidebar Font Size 12
+    {
+        "class": "sidebar_label",
+        "settings": ["curiosity_sidebar_font_normal"],
+        "font.size": 12,
+    },
+
+    // Sidebar Font Size 13
+    {
+        "class": "sidebar_label",
+        "settings": ["curiosity_sidebar_font_large"],
+        "font.size": 13,
+    },
+
+    // Sidebar Font Size 14
+    {
+        "class": "sidebar_label",
+        "settings": ["curiosity_sidebar_font_xlarge"],
+        "font.size": 14,
+    },
+
         // Sidebar file close
     {
         "class": "close_button",
-        "layer0.texture": "Curiosity/assets/file-close.png",
+        "layer0.texture": "Theme - Curiosity/assets/file-close.png",
         "layer0.opacity": 0,
         "content_margin": [8, 8]
     },
@@ -564,13 +602,13 @@
     {
         "class": "icon_folder",
         "content_margin": [8, 8],
-        "layer0.texture": "Curiosity/assets/folder.png",
+        "layer0.texture": "Theme - Curiosity/assets/folder.png",
         "layer0.opacity": 1.0
     },
         {
         "class": "icon_folder",
         "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
-        "layer0.texture": "Curiosity/assets/folder_open.png",
+        "layer0.texture": "Theme - Curiosity/assets/folder_open.png",
         "layer0.opacity": 1.0
     },
 
@@ -652,7 +690,7 @@
         "layer0.inner_margin": 2,
         "layer0.opacity": 1,
         "layer0.tint": [36, 32, 29],
-        "content_margin": [0, 2, -2, 0]
+        "content_margin": [0, 2, 0, 0]
     },
         // Quick panel background
     {
@@ -804,7 +842,7 @@
 
     {
         "class": "icon_regex",
-        "layer0.texture": "Curiosity/assets/icon-regex.png",
+        "layer0.texture": "Theme - Curiosity/assets/icon-regex.png",
         "layer0.opacity": 0.35,
         "layer0.tint": [255, 255, 255],
         "content_margin": 8,
@@ -823,7 +861,7 @@
         // Case sensitive search button
     {
         "class": "icon_case",
-        "layer0.texture": "Curiosity/assets/icon-case.png",
+        "layer0.texture": "Theme - Curiosity/assets/icon-case.png",
         "layer0.opacity": 0.35,
         "layer0.tint": [255, 255, 255],
         "content_margin": 8,
@@ -842,7 +880,7 @@
         // Match whole word search button
     {
         "class": "icon_whole_word",
-        "layer0.texture": "Curiosity/assets/icon-word.png",
+        "layer0.texture": "Theme - Curiosity/assets/icon-word.png",
         "layer0.opacity": 0.35,
         "layer0.tint": [255, 255, 255],
         "content_margin": 8,
@@ -867,7 +905,7 @@
 
     {
         "class": "icon_context",
-        "layer0.texture": "Curiosity/assets/icon-context.png",
+        "layer0.texture": "Theme - Curiosity/assets/icon-context.png",
         "layer0.opacity": 0.35,
         "layer0.tint": [255, 255, 255],
         "content_margin": 8,
@@ -886,7 +924,7 @@
         // Use search buffer
     {
         "class": "icon_use_buffer",
-        "layer0.texture": "Curiosity/assets/icon-buffer.png",
+        "layer0.texture": "Theme - Curiosity/assets/icon-buffer.png",
         "layer0.opacity": 0.35,
         "layer0.tint": [255, 255, 255],
         "content_margin": 8,
@@ -911,7 +949,7 @@
 
     {
         "class": "icon_reverse",
-        "layer0.texture": "Curiosity/assets/icon-reverse.png",
+        "layer0.texture": "Theme - Curiosity/assets/icon-reverse.png",
         "layer0.opacity": 0.35,
         "layer0.tint": [255, 255, 255],
         "content_margin": 8,
@@ -930,7 +968,7 @@
         // Search wrap button
     {
         "class": "icon_wrap",
-        "layer0.texture": "Curiosity/assets/icon-wrap.png",
+        "layer0.texture": "Theme - Curiosity/assets/icon-wrap.png",
         "layer0.opacity": 0.35,
         "layer0.tint": [255, 255, 255],
         "content_margin": 8,
@@ -950,7 +988,7 @@
         // Search in selection button
     {
         "class": "icon_in_selection",
-        "layer0.texture": "Curiosity/assets/icon-selection.png",
+        "layer0.texture": "Theme - Curiosity/assets/icon-selection.png",
         "layer0.opacity": 0.35,
         "layer0.tint": [255, 255, 255],
         "content_margin": 8,
@@ -975,7 +1013,7 @@
 
     {
         "class": "icon_preserve_case",
-        "layer0.texture": "Curiosity/assets/icon-preserve.png",
+        "layer0.texture": "Theme - Curiosity/assets/icon-preserve.png",
         "layer0.opacity": 0.35,
         "layer0.tint": [255, 255, 255],
         "content_margin": 8,
@@ -1000,7 +1038,7 @@
 
     {
         "class": "icon_highlight",
-        "layer0.texture": "Curiosity/assets/icon-highlight.png",
+        "layer0.texture": "Theme - Curiosity/assets/icon-highlight.png",
         "layer0.opacity": 0.35,
         "layer0.tint": [255, 255, 255],
         "content_margin": 8,
