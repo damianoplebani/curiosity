@@ -8,8 +8,8 @@ Warmth from Predawn. Attitude from Spacegray.
 ![Curiosity Sublime Theme, Mount Sharp](screenshots/mountsharp_editorinterface.png)
 
 ![Curiosity Sublime Theme, Ice Lake](screenshots/icelake_gotofile.png)
-<sub>Typeface used in code: [Pragmata Pro](http://www.fsd.it/fonts/pragmatapro.htm). UI Typeface: [Input Sans](http://input.fontbureau.com)</sub>
-<sub>First image: Mount Sharp, taken by NASA's Curiosity rover © [NASA/JPL-Caltech/MSSS](http://mars.jpl.nasa.gov/msl/) ([Source](http://mars.jpl.nasa.gov/msl/multimedia/images/?ImageID=4560). Second image: View of crater with water ice © [ESA/DLR/FU Berlin (G. Neukum)](http://www.esa.int/ESA) ([Source](http://www.esa.int/spaceinimages/Images/2005/07/Perspective_view_of_crater_with_water_ice_-_looking_east))
+<sub>Typeface used in code: [Pragmata Pro](http://www.fsd.it/fonts/pragmatapro.htm). UI Typeface: [Input Sans](http://input.fontbureau.com) • </sub>
+<sub>First image → Mount Sharp, taken by NASA's Curiosity rover © [NASA/JPL-Caltech/MSSS](http://mars.jpl.nasa.gov/msl/) ([Source](http://mars.jpl.nasa.gov/msl/multimedia/images/?ImageID=4560)) · Second image → View of crater with water ice © [ESA/DLR/FU Berlin (G. Neukum)](http://www.esa.int/ESA) ([Source](http://www.esa.int/spaceinimages/Images/2005/07/Perspective_view_of_crater_with_water_ice_-_looking_east))
 
 [View a screenshot of the entire theme](https://raw.githubusercontent.com/dmnplb/curiosity/master/screenshots/curiosity_theme.png)
 
