@@ -474,12 +474,12 @@
     {
         "class": "sidebar_tree",
         "settings": ["curiosity_sidebar_large"],
-        "row_padding": [30, 6]
+        "row_padding": [25, 5]
     },
     {
         "class": "sidebar_tree",
         "settings": ["curiosity_sidebar_xlarge"],
-        "row_padding": [30, 8]
+        "row_padding": [28, 6]
     },
 
         // Sidebar row selected

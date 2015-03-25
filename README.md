@@ -5,10 +5,13 @@
 Warmth from Predawn. Attitude from Spacegray.
 
 
-![Curiosity](screenshots/curiosity_theme.png)
-<sub>Typeface used in code: [Pragmata Pro](http://www.fsd.it/fonts/pragmatapro.htm). UI Typeface: [Input Sans](http://input.fontbureau.com)</sub>
+![Curiosity Sublime Theme, Mount Sharp](screenshots/mountsharp_editorinterface.png)
 
-[View original screenshot](https://raw.githubusercontent.com/dmnplb/curiosity/master/screenshots/curiosity_theme.png)
+![Curiosity Sublime Theme, Ice Lake](screenshots/icelake_gotofile.png)
+<sub>Typeface used in code: [Pragmata Pro](http://www.fsd.it/fonts/pragmatapro.htm). UI Typeface: [Input Sans](http://input.fontbureau.com)</sub>
+<sub>First image: Mount Sharp, taken by NASA's Curiosity rover © [NASA/JPL-Caltech/MSSS](http://mars.jpl.nasa.gov/msl/) ([Source](http://mars.jpl.nasa.gov/msl/multimedia/images/?ImageID=4560). Second image: View of crater with water ice © [ESA/DLR/FU Berlin (G. Neukum)](http://www.esa.int/ESA) ([Source](http://www.esa.int/spaceinimages/Images/2005/07/Perspective_view_of_crater_with_water_ice_-_looking_east))
+
+[View a screenshot of the entire theme](https://raw.githubusercontent.com/dmnplb/curiosity/master/screenshots/curiosity_theme.png)
 
 ***
 
@@ -94,6 +97,8 @@ Designed by Italian type designer [Fabrizio Schiavi](http://www.fsd.it) over the
 
 ### Tab Height
 
+![CuriosityTabHeight](screenshots/curiosity_tabheight.png)
+
 Change the height of the tabs by adding one of these settings in your `Preferences` file:
 ```json
   "curiosity_tabs_small": true,
@@ -106,6 +111,9 @@ Change the height of the tabs by adding one of these settings in your `Preferenc
 ```
 
 ### Sidebar
+
+![CuriositySidebar](screenshots/curiosity_sidebar.png)
+
 Change the font size and vertical spacing of the sidebar by adding one of these settings in your `Preferences` file:
 
 #### Font size
@@ -184,6 +192,7 @@ Please note that [MarkdownEditing](https://github.com/SublimeText-Markdown/Markd
 * `CuriosityUI.Type` lets you change the UI typeface
 * Transparency and hover details
 * Folder and file icons, designed by [Jamie Wilson](http://jamiewilson.io), from [Predawn](https://github.com/jamiewilson/predawn) theme
+* Markdown support
 
 ***
 
