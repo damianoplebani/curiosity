@@ -18,11 +18,12 @@ Warmth from Predawn. Attitude from Spacegray.
 ## Features
 
 * Custom [Base16 color scheme](https://github.com/chriskempson/base16) ([Default Dark](http://chriskempson.github.io/base16/#default))
-* Solid support for Markdown, [YAML Front Matter](http://jekyllrb.com/docs/frontmatter/) block included <small>([Instructions](#markdown-guide))</small>
+* Solid support for Markdown, [YAML Front Matter](http://jekyllrb.com/docs/frontmatter/) block included <small>([Instructions](#markdown))</small>
 * Folder and file icons, designed by [Jamie Wilson](http://jamiewilson.io), inherited from [Predawn](https://github.com/jamiewilson/predawn) theme
 * “Find & Replace” icons designed by [Gadzhi Kharkharov](http://kkga.me), inherited from [Spacegray](https://github.com/kkga/spacegray) theme
 * Easy change of the UI typeface with the custom `CuriosityUI.Type` file <small>([Instructions](#ui-typeface))</small>
 * Transparency and hover details
+* Support for [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter3)
 * Support for Retina displays
 
 <sub>[Are you curious about the differences from Spacegray and Predawn?](#differences)</sub>
@@ -69,7 +70,7 @@ Is your Sublime Text going nuts? That's okay. **Now you must restart Sublime Tex
 
 ## Configuration
 
-### <a name="ui-typeface"></a>UI Typeface
+### UI Typeface
 
 From the [Soda-Theme Wiki](https://github.com/buymeasoda/soda-theme/wiki/Theme-customisation):
 > To begin customising an existing theme, create a new file in your `User` folder (located in the Sublime Text `Packages` directory) with the same name as the theme file you are extending. […] 
@@ -149,7 +150,7 @@ Change the font size and vertical spacing of the sidebar by adding one of these 
   "curiosity_sidebar_xlarge": true
 ```
 
-### <a name="markdown-guide"></a>Markdown
+### Markdown
 
 ![CuriosityMarkdown](screenshots/curiosity_markdown.png)
 
@@ -178,7 +179,7 @@ Please note that [MarkdownEditing](https://github.com/SublimeText-Markdown/Markd
 
 ***
 
-## <a name="differences"></a>Differences
+## Differences
 
 #### What are the differences from [Predawn](https://github.com/jamiewilson/predawn)?
 * Warmer and darker shades of gray

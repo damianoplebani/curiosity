@@ -711,6 +711,13 @@
         "row_padding": [10, 10],
         "layer0.opacity": 0
     },
+        // No transparency
+    {
+        "class": "quick_panel",
+        "settings": ["curiosity_notransparency"],
+        "layer0.opacity": 1,
+        "layer0.tint": [42, 37, 34]
+    },
     {
         "class": "quick_panel_row",
         "layer0.texture": "",
