@@ -18,12 +18,12 @@ Warmth from Predawn. Attitude from Spacegray.
 ## Features
 
 * Custom [Base16 color scheme](https://github.com/chriskempson/base16) ([Default Dark](http://chriskempson.github.io/base16/#default))
-* Solid support for Markdown, [YAML Front Matter](http://jekyllrb.com/docs/frontmatter/) block included <small>([Instructions](#markdown))</small>
+* Solid support for Markdown, [YAML Front Matter](http://jekyllrb.com/docs/frontmatter/) block included ([Instructions](#markdown))
 * Folder and file icons, designed by [Jamie Wilson](http://jamiewilson.io), inherited from [Predawn](https://github.com/jamiewilson/predawn) theme
 * “Find & Replace” icons designed by [Gadzhi Kharkharov](http://kkga.me), inherited from [Spacegray](https://github.com/kkga/spacegray) theme
-* Easy change of the UI typeface with the custom `CuriosityUI.Type` file <small>([Instructions](#ui-typeface))</small>
-* Transparency and hover details
-* Support for [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter3)
+* Easy change of the UI typeface with the custom `CuriosityUI.Type` file ([Instructions](#ui-typeface))
+* Transparency and hover details ([Known Issues](#transparency))
+* Support for [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter3) ([Instructions](#sublimelinter))
 * Support for Retina displays
 
 <sub>[Are you curious about the differences from Spacegray and Predawn?](#differences)</sub>
@@ -96,6 +96,8 @@ Designed by Italian type designer [Fabrizio Schiavi](http://www.fsd.it) over the
 
 **Attention**: If you want to use Input as UI typeface, you should download the tweaked version used for the [Yosemite Font Replacement](http://input.fontbureau.com/systemfont/). If you're using OS X 10.10 (Yosemite), take into account that this font replaces Helvetica as system font: be careful!
 
+***
+
 ### Tab Height
 
 ![CuriosityTabHeight](screenshots/curiosity_tabheight.png)
@@ -110,6 +112,8 @@ Change the height of the tabs by adding one of these settings in your `Preferenc
 ```json
   "curiosity_tabs_large": true,
 ```
+
+***
 
 ### Sidebar
 
@@ -150,6 +154,39 @@ Change the font size and vertical spacing of the sidebar by adding one of these 
   "curiosity_sidebar_xlarge": true
 ```
 
+***
+
+### Transparency
+Disable the transparency in your `Quick Panel` and `Go to…` panel by adding this setting in your `Preferences` file:
+```json
+"curiosity_notransparency": true
+```
+**Attention**: if you use `Quick Switch Project…` regularly, you should disable transparency to [avoid annoying glitches](https://github.com/dmnplb/curiosity/issues/1).
+
+***
+
+### SublimeLinter
+
+![CuriositySublimeLinter](screenshots/sublimelinter.png)
+
+<sub>[SCSS-Lint](https://github.com/brigade/scss-lint) in action</sub>
+
+#### Color Scheme
+From [SublimeLinter docs](http://www.sublimelinter.com/en/latest/usage.html):
+> SublimeLinter checks to see if the color scheme contains its named colors. If not, it adds those colors to a copy of the color scheme, writes it to the `Packages/User/SublimeLinter` directory with a ` (SL)` suffix added to the filename, and switches to the modified color scheme.
+
+`curiosity.base16.tmTheme` includes SublimeLinter named colors. That means you shouldn't have a generated color scheme in a generated `Packages/User/SublimeLinter` directory.
+
+#### Gutter Theme
+1. Go to `Preferences → Package Settings → SublimeLinter → Settings - User`
+2. Add or replace your current theme with the following line:
+```json
+"gutter_theme": "Packages/Theme - Curiosity/linter/Curiosity.gutter-theme"
+```
+Gutter icons are colorized, so you are free to change their colors in your `SublimeLinter.sublime-settings` file.
+
+***
+
 ### Markdown
 
 ![CuriosityMarkdown](screenshots/curiosity_markdown.png)
@@ -164,6 +201,7 @@ Change the font size and vertical spacing of the sidebar by adding one of these 
 5. Add or replace your current Markdown settings with the following lines:
 
 ```json
+{
   "color_scheme": "Packages/Theme - Curiosity/curiosity.base16.markdown.tmTheme",
   "draw_centered": true,
   "draw_indent_guides": false,
