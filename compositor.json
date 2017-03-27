@@ -7,96 +7,34 @@
   "title": "",
   "branch": "",
   "style": {
-    "name": "Default",
+    "name": "Material",
     "componentSet": {
-      "nav": "nav/BasicNav",
-      "header": "header/BannerHeader",
+      "nav": "nav/DarkAbsoluteNav",
+      "header": "header/GradientHeader",
       "article": "article/BasicArticle",
       "footer": "footer/BasicFooter"
     },
-    "fontFamily": "-apple-system, BlinkMacSystemFont, sans-serif",
-    "fontWeight": 400,
-    "bold": 600,
-    "lineHeight": 1.5,
-    "typeScale": [
-      72,
-      48,
-      24,
-      20,
-      16,
-      14,
-      12
-    ],
-    "monospace": "Menlo, monospace",
+    "fontFamily": "Roboto, sans-serif",
     "heading": {
-      "fontFamily": null,
-      "fontStyle": null,
-      "fontWeight": 600,
-      "lineHeight": 1.25,
-      "textTransform": null,
-      "letterSpacing": null
-    },
-    "h0": {},
-    "h1": {},
-    "h2": {},
-    "h3": {},
-    "h4": {},
-    "h5": {},
-    "h6": {},
-    "alternativeText": {},
-    "space": [
-      0,
-      8,
-      16,
-      32,
-      48,
-      64,
-      96
-    ],
-    "layout": {
-      "maxWidth": 1024,
-      "centered": false
+      "fontWeight": 500,
+      "letterSpacing": "-0.01em"
     },
     "colors": {
-      "text": "#111",
+      "text": "#212121",
       "background": "#fff",
-      "primary": "#08e",
-      "secondary": "#059",
-      "highlight": "#e08",
-      "border": "#ddd",
-      "muted": "#eee"
+      "primary": "#2196f3",
+      "secondary": "#1565c0",
+      "highlight": "#ff4081",
+      "border": "#e0e0e0",
+      "muted": "#f5f5f5"
     },
-    "border": {
-      "width": 1,
-      "radius": 2
-    },
-    "link": {},
-    "button": {
-      "hover": {
-        "boxShadow": "inset 0 0 0 999px rgba(0, 0, 0, .125)"
-      }
-    },
-    "input": {},
-    "body": {
-      "margin": 0
-    },
-    "breakpoints": {
-      "xs": "@media screen and (max-width:40em)",
-      "sm": "@media screen and (min-width:40em)",
-      "md": "@media screen and (min-width:52em)",
-      "lg": "@media screen and (min-width:64em)"
+    "layout": {
+      "centered": true,
+      "bannerHeight": "80vh",
+      "maxWidth": 896
     }
   },
   "content": [
-    {
-      "component": "nav",
-      "links": [
-        {
-          "href": "https://github.com/dmnplb/curiosity",
-          "text": "GitHub"
-        }
-      ]
-    },
     {
       "component": "header",
       "heading": "curiosity",
@@ -120,19 +58,6 @@
         "source": "github.readme"
       },
       "html": "\n<p><a href=\"https://sublime.wbond.net/packages/Curiosity\">Curiosity</a> is a simple dark theme for Sublime Text 3, inspired by Mars. It&apos;s basically a mixture of two popular themes: <a href=\"https://github.com/jamiewilson/predawn\">Predawn</a> and <a href=\"https://github.com/kkga/spacegray\">Spacegray</a>.</p>\n<p>Warmth from Predawn. Attitude from Spacegray.</p>\n<p><img src=\"screenshots/mountsharp_editorinterface.png\"></p>\n<p><img src=\"screenshots/icelake_gotofile.png\">\n<sub>Typeface used in code: <a href=\"http://www.fsd.it/fonts/pragmatapro.htm\">Pragmata Pro</a>. UI Typeface: <a href=\"http://input.fontbureau.com\">Input Sans</a> &#x2022; </sub>\n<sub>First image &#x2192; Mount Sharp, taken by NASA&apos;s Curiosity rover &#xA9; <a href=\"http://mars.jpl.nasa.gov/msl/\">NASA/JPL-Caltech/MSSS</a> (<a href=\"http://mars.jpl.nasa.gov/msl/multimedia/images/?ImageID=4560\">Source</a>) &#xB7; Second image &#x2192; View of crater with water ice &#xA9; <a href=\"http://www.esa.int/ESA\">ESA/DLR/FU Berlin (G. Neukum)</a> (<a href=\"http://www.esa.int/spaceinimages/Images/2005/07/Perspective_view_of_crater_with_water_ice_-_looking_east\">Source</a>)</sub></p>\n<p><a href=\"https://raw.githubusercontent.com/dmnplb/curiosity/master/screenshots/curiosity_theme.png\">View a screenshot of the entire theme</a></p>\n<hr>\n<h2>Features</h2>\n<ul>\n<li>Custom <a href=\"https://github.com/chriskempson/base16\">Base16 color scheme</a> (<a href=\"http://chriskempson.github.io/base16/#default\">Default Dark</a>)</li>\n<li>Solid support for Markdown, <a href=\"http://jekyllrb.com/docs/frontmatter/\">YAML Front Matter</a> block included (<a href=\"#markdown\">Instructions</a>)</li>\n<li>Folder and file icons, designed by <a href=\"http://jamiewilson.io\">Jamie Wilson</a>, inherited from <a href=\"https://github.com/jamiewilson/predawn\">Predawn</a> theme</li>\n<li>&#x201C;Find &amp; Replace&#x201D; icons designed by <a href=\"http://kkga.me\">Gadzhi Kharkharov</a>, inherited from <a href=\"https://github.com/kkga/spacegray\">Spacegray</a> theme</li>\n<li>Easy change of the UI typeface with the custom <code>CuriosityUI.Type</code> file (<a href=\"#ui-typeface\">Instructions</a>)</li>\n<li>Transparency and hover details (<a href=\"#transparency\">Known Issues</a>)</li>\n<li>Support for <a href=\"https://github.com/SublimeLinter/SublimeLinter3\">SublimeLinter</a> (<a href=\"#sublimelinter\">Instructions</a>)</li>\n<li>Support for Retina displays</li>\n</ul>\n<p><sub><a href=\"#differences\">Are you curious about the differences from Spacegray and Predawn?</a></sub></p>\n<hr>\n<h2>How to Install</h2>\n<h3>Easy way: <a href=\"https://packagecontrol.io\">Package Control</a></h3>\n<ol>\n<li><a href=\"https://packagecontrol.io/installation\">Install Package Control</a></li>\n<li>Open Command Palette using the menu item <code>Tools &#x2192; Command Palette...</code> (OS X &#x2192; Cmd+Shift+P &#xB7; Win/Linux &#x2192; Ctrl+Shift+P)</li>\n<li>Type and select <code>Package Control: Install Package</code></li>\n<li>Find <code>Theme - Curiosity</code> and hit Enter</li>\n</ol>\n<h3>&#x201C;Hacker&#x201D; way: Git</h3>\n<ol>\n<li>Go to your Sublime Text <code>Packages</code> folder using the menu item <code>Preferences &#x2192; Browse Packages...</code></li>\n<li>Clone the repository using this command:<pre>git clone https://github.com/dmnplb/curiosity/ &quot;Theme - Curiosity&quot;</pre></li>\n</ol>\n<h3>Masochist way: Manual</h3>\n<ol>\n<li><a href=\"https://github.com/dmnplb/curiosity/archive/master.zip\">Download the archive from Github</a></li>\n<li>Unzip and rename the folder to <code>Theme - Curiosity</code></li>\n<li>Go to your Sublime Text <code>Packages</code> folder using the menu item <code>Preferences &#x2192; Browse Packages...</code></li>\n<li>Copy <code>Theme - Curiosity</code> into <code>Packages</code> folder</li>\n</ol>\n<hr>\n<h2>How to Activate</h2>\n<ol>\n<li>Open your &#x201C;User Preferences&#x201D; file using the menu item <code>Sublime Text &#x2192; Preferences &#x2192; Settings - User</code></li>\n<li>Add or replace your current theme settings with the code below, then save:</li>\n</ol>\n<pre>{\n  <span class=\"hljs-attr\">&quot;theme&quot;</span>: <span class=\"hljs-string\">&quot;Curiosity.sublime-theme&quot;</span>,\n  <span class=\"hljs-attr\">&quot;color_scheme&quot;</span>: <span class=\"hljs-string\">&quot;Packages/Theme - Curiosity/curiosity.base16.tmTheme&quot;</span>\n}</pre><p>Is your Sublime Text going nuts? That&apos;s okay. <strong>Now you must restart Sublime Text to see the full theme in action</strong>.</p>\n<hr>\n<h2>Configuration</h2>\n<h3>UI Typeface</h3>\n<p>From the <a href=\"https://github.com/buymeasoda/soda-theme/wiki/Theme-customisation\">Soda-Theme Wiki</a>:</p>\n<blockquote>\n<p>To begin customising an existing theme, create a new file in your <code>User</code> folder (located in the Sublime Text <code>Packages</code> directory) with the same name as the theme file you are extending. [&#x2026;] \nFrom this point, any valid theme rules you place in this file will automatically be applied by Sublime Text when the related theme is active.</p>\n</blockquote>\n<h4>Instructions</h4>\n<ol>\n<li>Download the <strong><a href=\"https://github.com/dmnplb/curiosity/blob/master/CuriosityUI.Type.sublime-theme\">CuriosityUI.Type</a></strong> file (<code>Save Link As&#x2026;</code>). Take it from the cloned repository, if you followed the &#x201C;Hacker&#x201D; way.</li>\n<li>Move the file in the <code>Packages/User</code> folder</li>\n<li>If you prefer a custom type, edit all the font references (eg: Source Code instead of <a href=\"http://www.fsd.it/fonts/pragmatapro.htm\">PragmataPro</a>) using <code>Find&amp;Replace</code> or Cmd+D (OSX) or Ctrl+D (Win/Linux) to select all the instances</li>\n<li>Change its name to <code>Curiosity.sublime-theme</code></li>\n<li>Restart Sublime Text. It&apos;s blazing fast, isn&apos;t it?</li>\n<li>You are free to add other custom theme rules</li>\n</ol>\n<h4>Font Recommendations</h4>\n<h5><a href=\"http://www.fsd.it/fonts/pragmatapro.htm\">PragmataPro</a></h5>\n<blockquote>\n<p>PragmataPro&#x2122; is a condensed monospaced font optimized for screen, designed to be the ideal font for coding and engineering.</p>\n</blockquote>\n<p>Designed by Italian type designer <a href=\"http://www.fsd.it\">Fabrizio Schiavi</a> over the last years, it has no interline spacings so it&apos;s perfect as UI typeface as well. It&apos;s quite expensive, but it&apos;s worth every penny if you consider the great aumont of the work. Furthermore, don&apos;t forget to have a look at <a href=\"http://www.fsd.it/fonts/pragmatapro/OpenType_features.png\">these slick OpenType ligatures</a></p>\n<h5><a href=\"http://input.fontbureau.com\">Input</a></h5>\n<blockquote>\n<p>Input is a flexible system of fonts designed specifically for code by <a href=\"http://www.fontbureau.com/people/DavidJonathanRoss/\">David Jonathan Ross</a>. It offers both monospaced and proportional fonts, all with a large range of widths, weights, and styles for richer code formatting.</p>\n</blockquote>\n<p><strong>Attention</strong>: If you want to use Input as UI typeface, you should download the tweaked version used for the <a href=\"http://input.fontbureau.com/systemfont/\">Yosemite Font Replacement</a>. If you&apos;re using OS X 10.10 (Yosemite), take into account that this font replaces Helvetica as system font: be careful!</p>\n<hr>\n<h3>Tab Height</h3>\n<p><img src=\"screenshots/curiosity_tabheight.png\"></p>\n<p>Change the height of the tabs by adding one of these settings in your <code>Preferences</code> file:</p>\n<pre>  &quot;curiosity_tabs_small&quot;: true,</pre><pre>  &quot;curiosity_tabs_medium&quot;: true,</pre><pre>  &quot;curiosity_tabs_large&quot;: true,</pre><hr>\n<h3>Sidebar</h3>\n<p><img src=\"screenshots/curiosity_sidebar.png\"></p>\n<p>Change the font size and vertical spacing of the sidebar by adding one of these settings in your <code>Preferences</code> file:</p>\n<h4>Font size</h4>\n<pre>  &quot;curiosity_sidebar_font_small&quot;: true</pre><pre>  &quot;curiosity_sidebar_font_normal&quot;: true</pre><pre>  &quot;curiosity_sidebar_font_large&quot;: true</pre><pre>  &quot;curiosity_sidebar_font_xlarge&quot;: true</pre><h4>Vertical spacing</h4>\n<pre>  &quot;curiosity_sidebar_xsmall&quot;: true</pre><pre>  &quot;curiosity_sidebar_small&quot;: true</pre><pre>  &quot;curiosity_sidebar_normal&quot;: true</pre><pre>  &quot;curiosity_sidebar_large&quot;: true</pre><pre>  &quot;curiosity_sidebar_xlarge&quot;: true</pre><hr>\n<h3>Transparency</h3>\n<p>Disable the transparency in your <code>Quick Panel</code> and <code>Go to&#x2026;</code> panel by adding this setting in your <code>Preferences</code> file:</p>\n<pre>&quot;curiosity_notransparency&quot;: true</pre><p><strong>Attention</strong>: if you use <code>Quick Switch Project&#x2026;</code> regularly, you should disable transparency to <a href=\"https://github.com/dmnplb/curiosity/issues/1\">avoid annoying glitches</a>.</p>\n<hr>\n<h3>SublimeLinter</h3>\n<p><img src=\"screenshots/sublimelinter.png\"></p>\n<p><sub><a href=\"https://github.com/brigade/scss-lint\">SCSS-Lint</a> in action</sub></p>\n<h4>Color Scheme</h4>\n<p>From <a href=\"http://www.sublimelinter.com/en/latest/usage.html\">SublimeLinter docs</a>:</p>\n<blockquote>\n<p>SublimeLinter checks to see if the color scheme contains its named colors. If not, it adds those colors to a copy of the color scheme, writes it to the <code>Packages/User/SublimeLinter</code> directory with a <code>(SL)</code> suffix added to the filename, and switches to the modified color scheme.</p>\n</blockquote>\n<p><code>curiosity.base16.tmTheme</code> includes SublimeLinter named colors. That means you shouldn&apos;t have a generated color scheme in a generated <code>Packages/User/SublimeLinter</code> directory.</p>\n<h4>Gutter Theme</h4>\n<ol>\n<li>Go to <code>Preferences &#x2192; Package Settings &#x2192; SublimeLinter &#x2192; Settings - User</code></li>\n<li>Add or replace your current theme with the following line:<pre>&quot;gutter_theme&quot;: &quot;Packages/Theme - Curiosity/linter/Curiosity.gutter-theme&quot;</pre>Gutter icons are colorized, so you are free to change their colors in your <code>SublimeLinter.sublime-settings</code> file.</li>\n</ol>\n<hr>\n<h3>Markdown</h3>\n<p><img src=\"screenshots/curiosity_markdown.png\"></p>\n<p><sub>Typeface in use: <a href=\"http://www.fsd.it/fonts/pragmatapro.htm\">Pragmata Pro</a>, designed by <a href=\"http://www.fsd.it\">Fabrizio Schiavi</a></sub></p>\n<h4>Instructions</h4>\n<ol>\n<li>Close all open <code>*.md</code> files</li>\n<li>Install <a href=\"https://github.com/SublimeText-Markdown/MarkdownEditing\">MarkdownEditing</a>, the most popular and complete Markdown plugin for Sublime Text. If you have problems, read carefully the <a href=\"https://github.com/SublimeText-Markdown/MarkdownEditing/blob/master/README.md\">project&apos;s page</a></li>\n<li>Open any Markdown file</li>\n<li>Go to and click <code>Preferences &#x2192; Settings - More &#x2192; Syntax Specific - User</code></li>\n<li>Add or replace your current Markdown settings with the following lines:</li>\n</ol>\n<pre>{\n  <span class=\"hljs-attr\">&quot;color_scheme&quot;</span>: <span class=\"hljs-string\">&quot;Packages/Theme - Curiosity/curiosity.base16.markdown.tmTheme&quot;</span>,\n  <span class=\"hljs-attr\">&quot;draw_centered&quot;</span>: <span class=\"hljs-literal\">true</span>,\n  <span class=\"hljs-attr\">&quot;draw_indent_guides&quot;</span>: <span class=\"hljs-literal\">false</span>,\n  <span class=\"hljs-attr\">&quot;trim_trailing_white_space_on_save&quot;</span>: <span class=\"hljs-literal\">false</span>,\n  <span class=\"hljs-attr\">&quot;line_numbers&quot;</span>: <span class=\"hljs-literal\">false</span>,\n  <span class=\"hljs-attr\">&quot;highlight_line&quot;</span>: <span class=\"hljs-literal\">false</span>,\n  <span class=\"hljs-attr\">&quot;word_wrap&quot;</span>: <span class=\"hljs-literal\">true</span>,\n  <span class=\"hljs-attr\">&quot;wrap_width&quot;</span>: <span class=\"hljs-number\">80</span>\n}</pre><p>Please note that <a href=\"https://github.com/SublimeText-Markdown/MarkdownEditing\">MarkdownEditing</a> doesn&apos;t provide a native support for <a href=\"http://jekyllrb.com/docs/frontmatter/\">YAML Front Matter</a> yet. The color scheme included in Curiosity supports it, though.</p>\n<hr>\n<h2>Differences</h2>\n<h4>What are the differences from <a href=\"https://github.com/jamiewilson/predawn\">Predawn</a>?</h4>\n<ul>\n<li>Warmer and darker shades of gray</li>\n<li><code>CuriosityUI.Type</code> lets you change the UI typeface</li>\n<li>Transparency and hover details</li>\n<li>Original &#x201C;Find &amp; Replace&#x201D; icons are replaced with <a href=\"https://github.com/kkga/spacegray\">Spacegray</a>&apos;s ones, designed by <a href=\"http://kkga.me\">Gadzhi Kharkharov</a></li>\n<li>Some graphical assets are replaced with textual style declarations to improve maintainability</li>\n</ul>\n<h4>What are the differences from <a href=\"https://github.com/kkga/spacegray\">Spacegray</a>?</h4>\n<ul>\n<li>Warmer and darker shades of gray</li>\n<li><code>CuriosityUI.Type</code> lets you change the UI typeface</li>\n<li>Transparency and hover details</li>\n<li>Folder and file icons, designed by <a href=\"http://jamiewilson.io\">Jamie Wilson</a>, from <a href=\"https://github.com/jamiewilson/predawn\">Predawn</a> theme</li>\n<li>Markdown support</li>\n</ul>\n<hr>\n<h2>Acknowledgements</h2>\n<p>This wouldn&apos;t have been possible without the beautiful work made by <a href=\"http://kkga.me\">Gadzhi Kharkharov</a>, author of Spacegray theme, and <a href=\"http://jamiewilson.io\">Jamie Wilson</a>, author of Predawn theme. A huge thanks to both! :)</p>\n"
-    },
-    {
-      "component": "footer",
-      "links": [
-        {
-          "href": "https://github.com/dmnplb/curiosity",
-          "text": "GitHub"
-        },
-        {
-          "href": "https://github.com/dmnplb",
-          "text": "dmnplb"
-        }
-      ]
     }
   ]
 }
